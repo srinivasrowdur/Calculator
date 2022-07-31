@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		ACA5C96A28961A8C00FBB4CF /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C96928961A8C00FBB4CF /* CalculatorApp.swift */; };
-		ACA5C96C28961A8C00FBB4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C96B28961A8C00FBB4CF /* ContentView.swift */; };
 		ACA5C96E28961A8E00FBB4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA5C96D28961A8E00FBB4CF /* Assets.xcassets */; };
 		ACA5C97128961A8E00FBB4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA5C97028961A8E00FBB4CF /* Preview Assets.xcassets */; };
+		ACA5C97828961AC600FBB4CF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C97728961AC600FBB4CF /* CalculatorView.swift */; };
+		ACA5C97A28961DC800FBB4CF /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C97928961DC800FBB4CF /* ButtonType.swift */; };
+		ACA5C97E28961FD500FBB4CF /* Digit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C97D28961FD500FBB4CF /* Digit.swift */; };
+		ACA5C9802896200600FBB4CF /* ArithmeticOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5C97F2896200600FBB4CF /* ArithmeticOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ACA5C96628961A8C00FBB4CF /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA5C96628961A8C00FBB4CF /* CalForKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalForKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA5C96928961A8C00FBB4CF /* CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp.swift; sourceTree = "<group>"; };
-		ACA5C96B28961A8C00FBB4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACA5C96D28961A8E00FBB4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA5C97028961A8E00FBB4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA5C97728961AC600FBB4CF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		ACA5C97928961DC800FBB4CF /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		ACA5C97D28961FD500FBB4CF /* Digit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digit.swift; sourceTree = "<group>"; };
+		ACA5C97F2896200600FBB4CF /* ArithmeticOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 		ACA5C96728961A8C00FBB4CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACA5C96628961A8C00FBB4CF /* Calculator.app */,
+				ACA5C96628961A8C00FBB4CF /* CalForKids.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +57,9 @@
 		ACA5C96828961A8C00FBB4CF /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				ACA5C97C28961E0500FBB4CF /* Models */,
+				ACA5C97B28961DFD00FBB4CF /* Views */,
 				ACA5C96928961A8C00FBB4CF /* CalculatorApp.swift */,
-				ACA5C96B28961A8C00FBB4CF /* ContentView.swift */,
 				ACA5C96D28961A8E00FBB4CF /* Assets.xcassets */,
 				ACA5C96F28961A8E00FBB4CF /* Preview Content */,
 			);
@@ -67,12 +74,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ACA5C97B28961DFD00FBB4CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5C97728961AC600FBB4CF /* CalculatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACA5C97C28961E0500FBB4CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5C97928961DC800FBB4CF /* ButtonType.swift */,
+				ACA5C97D28961FD500FBB4CF /* Digit.swift */,
+				ACA5C97F2896200600FBB4CF /* ArithmeticOperation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACA5C96528961A8C00FBB4CF /* Calculator */ = {
+		ACA5C96528961A8C00FBB4CF /* CalForKids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACA5C97428961A8E00FBB4CF /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = ACA5C97428961A8E00FBB4CF /* Build configuration list for PBXNativeTarget "CalForKids" */;
 			buildPhases = (
 				ACA5C96228961A8C00FBB4CF /* Sources */,
 				ACA5C96328961A8C00FBB4CF /* Frameworks */,
@@ -82,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = CalForKids;
 			productName = Calculator;
-			productReference = ACA5C96628961A8C00FBB4CF /* Calculator.app */;
+			productReference = ACA5C96628961A8C00FBB4CF /* CalForKids.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ACA5C96128961A8C00FBB4CF /* Build configuration list for PBXProject "Calculator" */;
+			buildConfigurationList = ACA5C96128961A8C00FBB4CF /* Build configuration list for PBXProject "CalForKids" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACA5C96528961A8C00FBB4CF /* Calculator */,
+				ACA5C96528961A8C00FBB4CF /* CalForKids */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA5C96C28961A8C00FBB4CF /* ContentView.swift in Sources */,
+				ACA5C9802896200600FBB4CF /* ArithmeticOperation.swift in Sources */,
+				ACA5C97828961AC600FBB4CF /* CalculatorView.swift in Sources */,
+				ACA5C97A28961DC800FBB4CF /* ButtonType.swift in Sources */,
 				ACA5C96A28961A8C00FBB4CF /* CalculatorApp.swift in Sources */,
+				ACA5C97E28961FD500FBB4CF /* Digit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +298,8 @@
 				DEVELOPMENT_TEAM = 8C4V5Y6W3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KidsCalculator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +329,8 @@
 				DEVELOPMENT_TEAM = 8C4V5Y6W3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KidsCalculator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACA5C96128961A8C00FBB4CF /* Build configuration list for PBXProject "Calculator" */ = {
+		ACA5C96128961A8C00FBB4CF /* Build configuration list for PBXProject "CalForKids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACA5C97228961A8E00FBB4CF /* Debug */,
@@ -329,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACA5C97428961A8E00FBB4CF /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		ACA5C97428961A8E00FBB4CF /* Build configuration list for PBXNativeTarget "CalForKids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACA5C97528961A8E00FBB4CF /* Debug */,
